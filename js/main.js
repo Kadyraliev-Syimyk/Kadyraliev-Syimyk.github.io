@@ -1,7 +1,7 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.smoothscroll').on('click', function(e) {
+  $('.smoothscroll').on('click', function (e) {
     e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -14,7 +14,7 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  $(".navbar-collapse a").on('click', function() {
+  $(".navbar-collapse a").on('click', function () {
     $(".navbar-collapse.collapse").removeClass('in');
   });
 });
